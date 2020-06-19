@@ -9,10 +9,10 @@
 #' @importFrom utils download.file
 #' @examples
 #' \dontrun{
-#' downlaod_images(inatdata)
+#' download_images(inatdata)
 #' }
 #' @export
-downlaod_images <- function(dat,size="medium",outpath="."){
+download_images <- function(dat,size="medium",outpath="."){
   for (i in 1:dim(dat)[1]){
     iurl <- dat$image_url[i]
     iurl <- gsub("medium",size,iurl)
